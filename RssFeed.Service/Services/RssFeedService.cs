@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
 using RssFeed.Contracts;
@@ -14,16 +15,9 @@ namespace RssFeed.Services
             _rssFeedRepository = rssFeedRepository;
         }
 
-        public Models.RssFeed GetRssFeed(string url)
+        public List<Models.RssFeedResponse> GetRssFeed(string url)
         {
-            var rssFeedResponse = _rssFeedRepository.CallRssFeed(url);
-            var serializer = new XmlSerializer(typeof(Models.RssFeed));
-
-            using(var reader = new StringReader(rssFeedResponse.xmlReponse))
-            {
-                return serializer.Deserialize(reader) as Models.RssFeed;
-            }
-
+            return _rssFeedRepository.CallRssFeed(url);
         }
     }
 }

@@ -3,10 +3,8 @@ namespace RssFeed.Models
 {
     public class RssFeedResponse
     {
-        public RssFeedResponse()
-        {
-        }
-
-        public string xmlReponse { get; set; }
+        public string Title { get; set; }
+        public long CheckSum { get; set; }
+        public string Url { get; set; }
     }
 }

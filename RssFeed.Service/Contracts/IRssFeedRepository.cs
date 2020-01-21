@@ -1,9 +1,10 @@
 ﻿using RssFeed.Models;
+using System.Collections.Generic;
 
 namespace RssFeed.Contracts
 {
     public interface IRssFeedRepository
     {
-        RssFeedResponse CallRssFeed(string url);
+        List<RssFeedResponse> CallRssFeed(string url);
     }
 }

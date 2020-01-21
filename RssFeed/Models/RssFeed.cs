@@ -1,14 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace RssFeed.Api.Models
 {
-    public class RssFeed
+    public class Episodes
     {
-        public RssFeed()
-        {
-        }
+        public List<EpisodeInfo> EpisodeInfo { get; set; }
+    }
 
+    public class EpisodeInfo
+    {
         public string Title { get; set; }
-        public int CheckSum { get; set; }
+        public long CheckSum { get; set; }
         public string Url { get; set; }
     }
 }

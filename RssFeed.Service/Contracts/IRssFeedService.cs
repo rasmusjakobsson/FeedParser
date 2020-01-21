@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace RssFeed.Contracts
 {
     public interface IRssFeedService
     {
-        Models.RssFeed GetRssFeed(string url);
+        List<Models.RssFeedResponse> GetRssFeed(string url);
     }
 }

@@ -20,10 +20,14 @@ namespace RssFeed.Api.Controllers
             _rssFeedService = rssFeedService;
         }
         [HttpGet]
-        public RssFeed.Api.Models.RssFeed Get(string url)
+        public List<EpisodeInfo> Get(string url)
         {
-            var parsedFeed = _rssFeedService.GetRssFeed(url);
-            return null;
+            return MapRssFeed(_rssFeedService.GetRssFeed(url));            
+        }
+
+        private List<EpisodeInfo> MapRssFeed(List<RssFeed.Models.RssFeedResponse> rssFeeds)
+        {
+            return rssFeeds.Select(rssFeed => new EpisodeInfo { CheckSum = rssFeed.CheckSum, Title = rssFeed.Title, Url = rssFeed.Url }).ToList();
         }
     }
 }
