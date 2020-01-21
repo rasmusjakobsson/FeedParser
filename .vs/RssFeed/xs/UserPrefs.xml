@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{33D13941-9DA0-42F5-A094-59771D789CD7}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.RssFeed.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RssFeed.Service/Contracts/IRssFeedService.cs">
+    <Files>
+      <File FileName="RssFeed/appsettings.json" Line="1" Column="1" />
+      <File FileName="RssFeed/Controllers/RssFeedController.cs" Line="17" Column="44" />
+      <File FileName="RssFeed/Models/RssFeed.cs" Line="2" Column="22" />
+      <File FileName="RssFeed/Program.cs" Line="10" Column="22" />
+      <File FileName="RssFeed/Startup.cs" Line="23" Column="1" />
+      <File FileName="RssFeed.Service/RssFeedRepository.cs" Line="3" Column="18" />
+      <File FileName="RssFeed.Service/Models/RssFeedResponse.cs" Line="2" Column="18" />
+      <File FileName="RssFeed.Service/Services/RssFeedService.cs" Line="12" Column="25" />
+      <File FileName="RssFeed/RssFeed.Api.csproj" Line="26" Column="1" />
+      <File FileName="RssFeed.Service/Models/RssFeed.cs" Line="1" Column="1" />
+      <File FileName="RssFeed.Service/Contracts/IRssFeedRepository.cs" Line="6" Column="1" />
+      <File FileName="RssFeed.Service/Contracts/IRssFeedService.cs" Line="4" Column="21" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RssFeed" expanded="True">
+            <Node name="RssFeed" expanded="True">
+              <Node name="Contracts" expanded="True">
+                <Node name="IRssFeedService.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="RssFeed.Api" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
