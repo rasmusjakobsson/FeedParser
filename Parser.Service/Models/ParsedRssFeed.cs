@@ -1,7 +1,6 @@
-﻿using System;
-namespace RssFeed.Models
+﻿namespace Parser.Models
 {
-    public class RssFeedResponse
+    public class ParsedEpisodeInfo 
     {
         public string Title { get; set; }
         public long CheckSum { get; set; }
